@@ -42,6 +42,8 @@ public class Topic_01_Data_Type {
     Select select = new Select(firefoxDriver.findElement(By.className("")));
     Topic_01_Data_Type topic01 = new Topic_01_Data_Type();
 
+    By by;
+
     // Interface
     WebDriver driver;
     JavascriptExecutor jsExecutor;

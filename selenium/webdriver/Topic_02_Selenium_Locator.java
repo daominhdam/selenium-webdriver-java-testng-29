@@ -112,7 +112,9 @@ public class Topic_02_Selenium_Locator {
 
         // XPath vs link
         driver.findElement(By.xpath("//a[@href='/customer/addresses']"));
-        driver.findElement(By.xpath("//a[text()='Addresses']"));
+
+        // Compile
+        driver.findElement(By.xpath("//div[@id='pageFooterChildren']"));
 
         // XPath vs partial link
         driver.findElement(By.xpath("//a[contains(@href,'addresses')]"));
