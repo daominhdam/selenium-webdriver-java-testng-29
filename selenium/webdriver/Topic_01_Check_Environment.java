@@ -17,6 +17,7 @@ public class Topic_01_Check_Environment {
 
     @BeforeClass
     public void beforeClass() {
+        // Selenium version 2.x/ 3.x/ 4.x (4.5 trở xuống)
         if (osName.contains("Windows")) {
             System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
         } else {
