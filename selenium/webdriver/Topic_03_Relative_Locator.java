@@ -32,6 +32,7 @@ public class Topic_03_Relative_Locator {
 
     @Test
     public void TC_01_Relative() {
+
         driver.get("https://demo.nopcommerce.com/login?returnUrl=%2Fregister");
 
         // Login button
@@ -47,7 +48,6 @@ public class Topic_03_Relative_Locator {
         // Password textbox
         By passwordTextboxBy = By.cssSelector("input#Password");
 
-        // GUI (location/ position)
         WebElement rememberMeTextElement = driver
                 .findElement(RelativeLocator.with(By.tagName("label"))
                         .above(loginButtonBy)
@@ -55,6 +55,8 @@ public class Topic_03_Relative_Locator {
                         .toLeftOf(forgotPasswordElement)
                         .below(passwordTextboxBy)
                         .near(forgotPasswordElement));
+
+
         System.out.println(rememberMeTextElement.getText());
 
         List<WebElement> allLinks = driver.findElements(RelativeLocator.with(By.tagName("a")));
