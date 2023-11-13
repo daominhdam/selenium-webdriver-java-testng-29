@@ -6,8 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/selenium" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.idea" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="17" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="testng-7.8.0" level="project" />
+    <orderEntry type="library" name="Selenium TestNG" level="project" />
   </component>
 </module>
