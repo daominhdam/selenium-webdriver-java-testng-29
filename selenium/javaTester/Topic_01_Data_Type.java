@@ -5,6 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -69,4 +70,13 @@ public class Topic_01_Data_Type {
     // Tên biến
     // Giá trị của biến - gán vào vs phép =
     // Nếu như không gán: dữ liệu mặc định
+
+    public static void main(String[] args) {
+        boolean status = true;
+        if (status) {
+            Assert.assertTrue(true);
+        } else {
+
+        }
+    }
 }
