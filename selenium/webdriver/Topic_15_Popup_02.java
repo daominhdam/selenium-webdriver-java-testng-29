@@ -87,7 +87,6 @@ public class Topic_15_Popup_02 {
         return driver.findElement(locator);
     }
 
-
     @AfterClass
     public void afterClass() {
         driver.quit();
