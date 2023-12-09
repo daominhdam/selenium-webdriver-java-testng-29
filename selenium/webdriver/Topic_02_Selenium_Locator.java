@@ -2,11 +2,13 @@ package webdriver;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class Topic_02_Selenium_Locator {
@@ -42,7 +44,8 @@ public class Topic_02_Selenium_Locator {
 
     @Test
     public void TC_02_Class() {
-        driver.findElement(By.className("header-logo"));
+        driver.findElement(By.className("store-search-box"));
+
     }
 
     @Test
@@ -92,8 +95,8 @@ public class Topic_02_Selenium_Locator {
 
         // Css vs partial link
         driver.findElement(By.cssSelector("a[href*='addresses']"));
-       // driver.findElement(By.cssSelector("a[href^='addresses']"));
-       // driver.findElement(By.cssSelector("a[href$='addresses']"));
+        // driver.findElement(By.cssSelector("a[href^='addresses']"));
+        // driver.findElement(By.cssSelector("a[href$='addresses']"));
     }
 
     @Test

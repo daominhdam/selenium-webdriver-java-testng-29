@@ -25,7 +25,7 @@ public class Topic_16_Shadow_DOM {
     }
 
     @Test
-    public void TC_01_shadow_DOM() {
+    public void TC_01_Shadow_DOM() {
 
         // driver = đại diện cho cái Real DOM (DOM bên ngoài)
         driver.get("https://automationfc.github.io/shadow-dom/");
@@ -54,7 +54,7 @@ public class Topic_16_Shadow_DOM {
     }
 
     @Test
-    public void TC_02_shadow_DOM_Shopee() {
+    public void TC_02_Shadow_DOM_Shopee() {
         driver.get("https://shopee.vn/");
         sleepInSeconds(5);
 
