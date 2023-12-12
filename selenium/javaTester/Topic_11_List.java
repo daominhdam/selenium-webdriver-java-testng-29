@@ -20,7 +20,14 @@ public class Topic_11_List {
 
         System.out.println(studentName.get(studentName.size() - 1));
 
+        System.out.println(getSuccessMessage());
+    }
 
-
+    public boolean getSuccessMessage() {
+        String text = "Full Name: John Wick";
+        if (text.contains("John")) {
+            return true;
+        }
+        return false;
     }
 }

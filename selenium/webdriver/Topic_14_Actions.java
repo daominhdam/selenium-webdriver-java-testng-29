@@ -25,7 +25,6 @@ import java.util.List;
 public class Topic_14_Actions {
     WebDriver driver;
     Actions actions;
-
     JavascriptExecutor javascriptExecutor;
 
     @BeforeClass
