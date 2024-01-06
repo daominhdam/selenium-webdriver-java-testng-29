@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -35,7 +36,6 @@ public class Topic_17_Frame_Iframe {
 
         Assert.assertTrue(formIframe.isDisplayed());
 
-        // Switch vào frame/ iframe trước khi thao tác vs các element bên trong -> qua trang B
         driver.switchTo().frame(formIframe);
 
         // Ko tìm thấy element (element nằm trong iframe)
