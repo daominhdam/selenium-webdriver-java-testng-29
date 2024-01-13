@@ -187,7 +187,6 @@ public class Topic_18_Window_Tab {
                 break;
             }
         }
-
     }
 
     public void closeAllWindowWithoutParent(String parentID) {
