@@ -14,6 +14,7 @@ public class Topic_07_String {
         String hotelMsg = "Welcome " + fullName + " to InterContinental Hotel";
         System.out.println(hotelMsg);
 
+        hotelMsg.endsWith("Hotel");
 
     }
 }
