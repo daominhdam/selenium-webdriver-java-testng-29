@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Selenium WebDriver" verbose="1">
+
+    <groups>
+        <run>
+            <include name="order"/>
+        </run>
+    </groups>
+
+    <test name="Run on Chrome browser">
+        <packages>
+            <package name="categories" />
+            <package name="customers" />
+            <package name="orders" />
+        </packages>
+
+        <!--<classes>
+            <class name="testng.Topic_02_Annotations"/>
+        </classes>-->
+    </test>
+</suite>

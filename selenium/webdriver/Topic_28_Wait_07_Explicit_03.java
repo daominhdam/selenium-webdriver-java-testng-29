@@ -49,6 +49,25 @@ public class Topic_28_Wait_07_Explicit_03 {
     }
 
     @Test
+    public void TC_07_() {
+        driver.get("https://demos.telerik.com/aspnet-ajax/ajaxloadingpanel/functionality/explicit-show-hide/defaultcs.aspx");
+
+        explicitWait = new WebDriverWait(driver, Duration.ofSeconds(5));
+
+        explicitWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//legend[text()='Selected Dates:']/following-sibling::div/span")));
+
+        Assert.assertEquals(driver.findElement(By.xpath("//legend[text()='Selected Dates:']/following-sibling::div/span")).getText(), "No Selected Dates to display.");
+
+        driver.findElement(By.xpath("//div[@class='calendarContainer']//a[text()='9']")).click();
+
+        explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[contains(@style,'absolute')]/div[@class='raDiv']")));
+
+        explicitWait.until(ExpectedConditions.attributeContains(By.xpath("//div[@class='calendarContainer']//a[text()='9']/parent::td"), "class", "rcSelected"));
+
+        Assert.assertTrue(driver.findElement(By.xpath("//div[@class='datesContainer']//span")).getText().contains("9"));
+    }
+
+    @Test
     public void TC_02_Upload_File() {
         driver.get("https://gofile.io/welcome");
 
