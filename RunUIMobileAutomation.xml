@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UI Mobile Automation" verbose="1" >
+
+    <test name="Run on Firefox browser">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="version" value="120"/>
+        <classes>
+            <class name="testng.Topic_09_Parameter"/>
+        </classes>
+    </test>
+</suite>

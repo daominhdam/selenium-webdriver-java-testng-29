@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UI Web and Mobile Automation" verbose="1">
+
+    <suite-files>
+        <suite-file path="RunUIMobileAutomation.xml"/>
+        <suite-file path="RunUIWebAutomation.xml"/>
+    </suite-files>
+
+</suite>

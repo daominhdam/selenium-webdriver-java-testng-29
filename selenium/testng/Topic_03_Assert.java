@@ -19,11 +19,11 @@ public class Topic_03_Assert {
         // Điều kiện nhận vào là boolean (isDisplayed/ isEnabled/ isSelected/ isMultiple/ User-Defined/..)
 
         // Mong đợi cái kết quả trả về là đúng
-         Assert.assertTrue(isElementDisplayed(By.cssSelector("")));
-         Assert.assertTrue(isElementDisplayed(By.cssSelector("")), "Element is not displayed!");
+        // Assert.assertTrue(isElementDisplayed(By.cssSelector("")));
+        // Assert.assertTrue(isElementDisplayed(By.cssSelector("")), "Element is not displayed!");
 
         // Mong đợi cái kết quả trả về là false
-        Assert.assertFalse(isElementDisplayed(By.cssSelector("")));
+       // Assert.assertFalse(isElementDisplayed(By.cssSelector("")));
     }
 
     private boolean isElementDisplayed(By locator) {

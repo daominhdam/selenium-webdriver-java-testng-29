@@ -57,6 +57,7 @@ public class Topic_31_Wait_10_Page_Ready {
 
     @Test
     public void TC_02_OrangeHRM_API_Document() {
+        // Test fix code
         driver.get("https://api.orangehrm.com/");
 
         Assert.assertTrue(explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div#loader>div.spinner"))));
